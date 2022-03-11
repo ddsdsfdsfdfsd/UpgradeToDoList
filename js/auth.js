@@ -28,7 +28,8 @@ const auth = async (e) => {
         pass
     }
 
-    const req = await fetch(API + authRoute,{
+    try{
+        const req = await fetch(API + authRoute,{
         headers:{
             'Content-Type':'application/json'
         },
@@ -50,7 +51,13 @@ const auth = async (e) => {
         error.textContent='Wrong Email or Password! Try again'
 
         output.append(error)
-        
+    }
+    }catch{
+        output.innerHTML=''
+        const error = document.createElement('h1')
+        error.className = 'output__error'
+        error.textContent="Something went wrong, try again"
+        output.append(error)
     }
     
 }
