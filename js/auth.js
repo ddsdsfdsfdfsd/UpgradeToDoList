@@ -9,7 +9,7 @@ const output = document.getElementById('output')
 const hrefBtn = document.getElementById('sign-up')
 hrefBtn.addEventListener('click', (e) => {
     e.preventDefault()
-    window.location.href = '../reg/reg.html'
+    window.location.href = '../../reg.html'
 })
 
 

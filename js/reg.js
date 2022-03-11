@@ -31,7 +31,7 @@ const registration = async (e) => {
     if(res.token){
         localStorage.setItem('token',res.token)
         alert('Congratulations, registration is success')
-        window.location.href="../todo/todo.html"
+        window.location.href="./pages/todo/todo.html"
     }else{
         output.innerHTML=''
         const error = document.createElement('h3')
@@ -53,7 +53,7 @@ const registration = async (e) => {
 const redirect = () =>{
     let token = localStorage.getItem('token')
     if(token){
-        window.location.href="../todo/todo.html"
+        window.location.href="./pages/todo/todo.html"
     }
 }
 redirect()
