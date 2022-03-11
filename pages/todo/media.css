@@ -1,0 +1,124 @@
+@media (max-width: 1024px){
+    .header__text{
+        width: 70%;
+    }
+
+    .header__nav{
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px){
+
+    #log__out{
+        font-size: 14px;
+    }
+
+    .createToDo{
+        flex-direction: column;
+    }
+
+    .todo__inputs{
+        flex-direction: row;
+        padding-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    .todo__inputs input{
+        width: 90%;
+    }
+
+    #text, #desc{
+        width: 100%;
+    }
+
+    .todo__inputs-name, .todo__inputs-description{
+        text-align: center;
+    }
+
+    .todo__count{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .todo__button{
+        margin: 5px 0 20px
+    }
+
+    .ToDo{
+        flex-direction: column;
+        row-gap:20px;
+        align-items:flex-start;
+    }
+
+    .ToDo__buttons{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+
+}
+
+@media (max-width: 576px){
+    
+    .container{
+        max-width: 90%;
+    }
+    .header__text-todo{
+        display: none;
+    }
+
+    .header__text{
+        width: 50%;
+    }
+
+    .header__text-username{
+        font-size: 20px;
+    }
+
+    .header__nav{
+        width: 50%;
+    }
+    
+    .header__nav button{
+        padding: 7px 25px;
+    }
+
+    .todo__input{
+        align-items: center;
+    }
+
+    #text, #desc{
+        width: 80%;
+    }
+
+    .footer__username{
+        font-size: 18px;
+    }
+
+    .footer__buttons{
+        column-gap: 15px;
+    }
+
+    .footer__buttons button {
+        padding: 7px 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 390px){
+    .todo__count-all, .todo__count-done{
+        font-size: 14px;
+    }
+
+    #text, #desc{
+        width: 90%;
+    }
+
+    .errorName, .errorDesc {
+        font-size: 8px;
+    }
+}

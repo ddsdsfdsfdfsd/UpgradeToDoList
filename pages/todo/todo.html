@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./todo.css">
+    <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__text">
+                    <a href="todo.html" class="header__text-todo">Todo</a>
+                    <h2 class="header__text-username"></h2>
+                </div>
+                <div class="header__nav">
+                    <button id="log__out">Log out</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <h1 class="todo__h1">To-Do List!</h1>
+                <div class="createToDo">
+                    <div class="todo__inputs">
+                        <div class="todo__input todo__inputFirst">
+                            <p class="todo__inputs-name">Name</p>
+                            <input type="text" id="text">
+                            <p class="errorName"></p>
+                        </div>
+                        <div class="todo__input todo__inputSecond">
+                            <p class="todo__inputs-description">Description</p>
+                            <input type="text" id="desc">
+                            <p class="errorDesc"></p>
+                        </div>
+                    </div>
+                    <div class="todo__info">
+                        <div class="todo__button">
+                            <button id="todo__btn">create todo</button>
+                        </div>
+                        <div class="todo__count">
+                            <p class="todo__count-all"></p>
+                            <p class="todo__count-done"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="ToDos">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="backdrop"></div>
+    <div class="modal">
+        <div class="modalHeader">
+            <p class="modalHeaderTitle">Edit ToDo</p>
+            <div class="modalCloseButton">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="modalContent">
+            <div class="modal-inner">
+                <div class="newN">
+                    <h3 class="newText">New name</h3>
+                    <input type="text" id="newName">
+                </div>
+                <div class="newD">
+                    <h3 class="newText">New description</h3>
+                    <input type="text" id="newDescription">
+                </div>
+            </div>
+            <button class="edit">Apply the changes</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrap">
+                <h3 class="footer__username"></h3>
+                <div class="footer__buttons">
+                    <button id="footer__buttons-auth">Auth</button>
+                    <button id="footer__buttons-reg">Reg</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/todo.js"></script>
+</body>
+
+</html>

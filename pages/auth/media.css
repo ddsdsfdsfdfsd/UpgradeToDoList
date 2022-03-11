@@ -1,0 +1,15 @@
+@media (max-width: 576px){
+    .wrap{
+        width: 380px;
+    }
+}
+
+@media (max-width: 390px){
+    .wrap{
+        width: 90%;
+    }
+
+    button{
+        margin: 0;
+    }
+}

@@ -1,0 +1,97 @@
+/* default */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 46, 46);
+    color: white;
+    padding-top: 25vh;
+}
+
+/* default */
+
+
+/* output */
+
+#output {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.output__error{
+    color: rgb(150, 7, 7);
+}
+
+/* output */
+
+
+/* login */
+
+.wrap {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: royalblue;
+    border-radius: 15px;
+    padding: 25px 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0)
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    text-indent: 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+
+}
+
+input::placeholder {
+    color: white;
+}
+
+.btns {
+    margin: 15px auto;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 25px;
+    font-weight: bold;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* login */
