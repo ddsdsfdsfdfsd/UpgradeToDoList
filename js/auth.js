@@ -67,5 +67,3 @@ const redirect = () => {
 
 }
 redirect()
-
-

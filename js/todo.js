@@ -1,5 +1,3 @@
-// Nanana1@gmail.com
-// Nanana1&
 
 const check = () => {
     const token = localStorage.getItem('token')
