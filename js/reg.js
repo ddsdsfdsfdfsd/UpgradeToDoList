@@ -16,7 +16,8 @@ const registration = async (e) => {
         pass
     }
 
-    const req = await fetch(API+regRoute,{
+    try{
+        const req = await fetch(API+regRoute,{
         headers:{
             "Content-Type":"application/json"
         },
@@ -36,6 +37,14 @@ const registration = async (e) => {
         const error = document.createElement('h3')
         error.className = 'output__error'
         error.textContent='The password must contain a number, a special character and a capital letter!'
+
+        output.append(error)
+    }
+    }catch{
+        output.innerHTML=''
+        const error = document.createElement('h3')
+        error.className = 'output__error'
+        error.textContent="You entered something wrong, try again"
 
         output.append(error)
     }
