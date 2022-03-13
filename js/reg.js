@@ -3,6 +3,14 @@ const regRoute = '/auth/reg'
 
 const form = document.getElementById('reg-form')
 
+const hrefBtn = document.getElementById('sign-in')
+hrefBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    window.location.href = './pages/auth/auth.html'
+})
+
+
+
 const registration = async (e) => {
     e.preventDefault()
 
