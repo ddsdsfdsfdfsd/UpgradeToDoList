@@ -33,7 +33,7 @@ auth.addEventListener('click', () => {
 
 reg.addEventListener('click', () => {
     localStorage.removeItem('token')
-    window.location.href = "../reg/reg.html"
+    window.location.href = "../../index.html"
 })
 
 
